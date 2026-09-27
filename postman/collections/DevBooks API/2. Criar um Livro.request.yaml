@@ -8,7 +8,7 @@ body:
     {
         "title": "Harry Potter e a Pedra Filosofal",
         "release_year": 1997,
-        "author_id": "ee93d2ed-7510-4c45-8c07-3e985e1552df"
+        "author_id": "{{authorId}}"
       }
 scripts:
   - type: afterResponse

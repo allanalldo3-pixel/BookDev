@@ -3,11 +3,17 @@ url: http://localhost:3333/authors
 method: POST
 body:
   type: json
-  content: "{\r
-
-    \  \"name\": \"J.K. Rowling\",\r
-
-    \  \"biography\": \"Autora britânica, criadora de Harry Potter.\"\r
-
-    }"
+  content: |-
+    {
+      "name": "J.K. Rowling {{$guid}}",
+      "biography": "Autora britânica, criadora de Harry Potter."
+    }
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      if (pm.response.code === 201) {
+        const author = pm.response.json();
+        pm.collectionVariables.set('authorId', author.id);
+      }
 order: 1790535798314
