@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: 'http://localhost:3333/books/{{bookId}}'
+method: DELETE
+order: 4477011933771454

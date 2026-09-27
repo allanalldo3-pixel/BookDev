@@ -1,0 +1,14 @@
+$kind: http-request
+description: ""
+url: 'http://localhost:3333/books/{{bookId}}'
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Harry Potter e a Câmara Secreta\",\r
+
+    \  \"release_year\": 1998\r
+
+    }"
+order: 4424273192479451

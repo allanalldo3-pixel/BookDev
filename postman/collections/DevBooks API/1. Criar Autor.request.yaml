@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3333/authors
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"J.K. Rowling\",\r
+
+    \  \"biography\": \"Autora britânica, criadora de Harry Potter.\"\r
+
+    }"
+order: 1790535798314

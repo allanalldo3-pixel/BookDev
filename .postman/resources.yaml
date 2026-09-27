@@ -1,0 +1,8 @@
+workspace:
+  id: 25416aee-790b-4137-80a4-8801737f73ef
+localResources:
+  specs:
+    - ../postman/specs/Collection v2.1/Collection v2.1.json
+resourceNameMappings:
+  specs:
+    - ../postman/specs/Collection v2.1/Collection v2.1.json: Collection v2.1
